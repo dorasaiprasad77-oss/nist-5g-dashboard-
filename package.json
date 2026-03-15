@@ -1,0 +1,25 @@
+{
+  "name": "nist-5g-dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "install:all": "npm install && cd backend && npm install && cd ../nist-5g-dashboard && npm install",
+    "build:all": "cd backend && npm run build && cd ../nist-5g-dashboard && npm run build",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd nist-5g-dashboard && npm run dev"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "leaflet": "^1.9.4",
+    "lucide-react": "^0.577.0",
+    "react-leaflet": "^5.0.0",
+    "recharts": "^3.8.0",
+    "socket.io-client": "^4.8.3",
+    "tailwind-merge": "^3.5.0"
+  },
+  "devDependencies": {
+    "@types/leaflet": "^1.9.21",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3"
+  }
+}
